@@ -1,7 +1,7 @@
-name: 'Mark or close stale issues and PRs'
+name: "Mark or close stale issues and PRs"
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: "0 0 * * *"
 
 jobs:
   stale:
@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/stale@v6
         with:
-          repo-token: ${{ secrets.GH_TOKEN }}
+          repo-token: ${{ secrets.PAT_GITHUB }}
           # Staling issues and PR's
           days-before-stale: 30
           stale-issue-label: stale
