@@ -20,7 +20,7 @@ provider "nexus" {
 ```hcl
 module "nexus_routing" {
   source  = "devops-ia/routing/nexus"
-  version = "1.0.0"
+  version = "x.x.x"
 
  nexus_routing_rule = [
     {
@@ -43,7 +43,7 @@ module "nexus_routing" {
 ```hcl
 module "nexus_routing_rule" {
   source  = "devops-ia/routing/nexus//modules/nexus-routing-rule"
-  version = "1.0.0"
+  version = "x.x.x"
 
   name        = "stop-leaks"
   description = "Prevent requests of internal names"
