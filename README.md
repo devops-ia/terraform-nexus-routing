@@ -1,6 +1,6 @@
 # Nexus Routing
 
-This module allows you to create **Nexus Routing as a global resource** and **individual Nexus Routing resources.** For individual examples, see the usage snippets and [examples](https://github.com/terraform-nexus-modules/terraform-nexus-routing/tree/main/examples).
+This module allows you to create **Nexus Routing as a global resource** and **individual Nexus Routing resources.** For individual examples, see the usage snippets and [examples](https://github.com/devops-ia/terraform-nexus-routing/tree/main/examples).
 
 ## Provider
 You need use a [Nexus provider](https://registry.terraform.io/providers/datadrivers/nexus/latest/docs).
@@ -20,7 +20,6 @@ provider "nexus" {
 ```hcl
 module "nexus_routing" {
   source  = "devops-ia/routing/nexus"
-  version = "x.x.x"
 
  nexus_routing_rule = [
     {
@@ -43,7 +42,6 @@ module "nexus_routing" {
 ```hcl
 module "nexus_routing_rule" {
   source  = "devops-ia/routing/nexus//modules/nexus-routing-rule"
-  version = "x.x.x"
 
   name        = "stop-leaks"
   description = "Prevent requests of internal names"
@@ -92,8 +90,8 @@ No resources.
 
 ## Authors
 
-Module is maintained by [DevOps IA](https://github.com/devops-ia) with help from [these awesome contributors](https://github.com/terraform-nexus-modules/terraform-nexus-routing/graphs/contributors).
+Module is maintained by [DevOps IA](https://github.com/devops-ia) with help from [these awesome contributors](https://github.com/devops-ia/terraform-nexus-routing/graphs/contributors).
 
 ## License
 
-Apache 2 Licensed. See [LICENSE](https://github.com/terraform-nexus-modules/terraform-nexus-routing/blob/main/LICENSE) for full details.
+Apache 2 Licensed. See [LICENSE](https://github.com/devops-ia/terraform-nexus-routing/blob/main/LICENSE) for full details.
